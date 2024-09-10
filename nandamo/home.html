@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Games 2024</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            padding: 14px 100px;
+            background-color: #333;
+            border-radius: 10%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .header-logo span {
+            color: white;
+            font-size: 30px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        /* Banner Styles */
+        .banner {
+            background: url('olimpic.jpg') no-repeat center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            color: white;
+            font: 3em 'Arial';
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Medal Table Styles */
+
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        /* Marquee Styles */
+        marquee {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Content and Form Styles */
+        .events {
+    height: 100%; /* Makes sure it takes the height of the marquee */
+    display: flex;
+    flex-direction: column;
+}
+
+.events img {
+    width: 100%;
+    height: auto;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="olimpic.jpg" alt="Logo">
+            <span>Paralympics 2024</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Medals</a>
+            <a href="#">About us</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Welcome to the Olympic Games</h1>
+    </div>
+
+        <!-- Marquee for Slideshow -->
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <img src="event1.jpg" alt="Event 1" width="300" height="300">
+            <img src="event2.jpg" alt="Event 2" width="300" height="300">
+            <img src="event5.jpg" alt="Event 3" width="300" height="300">
+            <img src="event4.jpg" alt="Event 4" width="300" height="300">
+            <h1>See more Games</h1>
+        </marquee>
+
+        <h1>Medal Table</h1>
+    <div class="medal-table-container">
+        <table class="medal-table">
+            <tr>
+                <th>#</th>
+                <th>Teams/NOCs</th>
+                <th>G</th>
+                <th>S</th>
+                <th>B</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="us-flag.png" alt="USA"> United States of America</td>
+                <td>40</td>
+                <td>44</td>
+                <td>42</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="china-flag.png" alt="China"> People's Republic of China</td>
+                <td>40</td>
+                <td>27</td>
+                <td>24</td>
+                <td>91</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </div>
+
+
+
+    <h2>Upcoming Events</h2>
+    <marquee behavior="scroll" direction="up" scrollamount="3" height="200">
+        <div class="events">
+            <img src="event1.jpg" alt="Event 1">
+            <img src="event2.jpg" alt="Event 2">
+            <img src="event3.jpg" alt="Event 3">
+            <img src="event4.jpg" alt="Event 4">
+        </div>
+    </marquee>
+    
+    <div style="text-align: center;">
+        <table style="margin: 0 auto;">
+            <tr>
+                <td style="vertical-align: top; text-align: left;">
+                   <br>
+                   <br><h1>Paris olympics 2024</h1>
+                   <br>
+                   <br>
+                    <p>The Paris 2024 Olympics will be an exciting event <br>
+                        showcasing world-class athletes from around the globe.<br>
+                         Get ready for an unforgettable experience in the heart of France!</p>
+                </td>
+                <td style="vertical-align: top; text-align: center;">
+                    <img src="games.jpg" alt="Paris 2024 Olympics" style="max-width: 100%; height: auto;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <footer>
+        <div class="footer-logo">
+            <img src="olimpic.jpg" alt="Paris 2024">
+            <span>Paralympics 2024</span>
+        </div>
+        <h1>All copyrights reserved </h1>
+    </footer>
+</body>
+</html>
